@@ -1,0 +1,375 @@
+/* styles.css */
+/* Современный сброс и базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf9f7;
+    font-family: "Inter", sans-serif;
+    color: #2c2b2b;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Контейнер — центрирование, мягкие тени, воздух */
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 2rem 1rem;
+    width: 100%;
+}
+
+/* Логичная структура: header, main, footer */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.site-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid #d4d0c9;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    color: #1e1e1e;
+}
+
+.site-title i {
+    font-size: 2.4rem;
+    color: #7f7770;
+    margin-right: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #6b625c;
+    max-width: 600px;
+    margin-top: 0.25rem;
+    border-left: 3px solid #c7b9ad;
+    padding-left: 1.2rem;
+    text-align: left;
+}
+
+/* Единство оформления: карточки, отступы, интерлиньяж */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin: 3rem 0 4rem;
+}
+
+/* Левая колонка — визуальный акцент (качественное фото / арт) */
+.visual-column {
+    background-color: #eae7e2;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.visual-column:hover {
+    box-shadow: 0 20px 35px -12px rgba(79, 65, 55, 0.2);
+}
+
+.image-placeholder {
+    width: 100%;
+    background-color: #cfc8c0;
+    position: relative;
+    aspect-ratio: 4 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3e3a37;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* фото от unsplash — лицензия Free to use, авторства указаны в alt */
+}
+
+.image-caption {
+    background: #ffffffdd;
+    backdrop-filter: blur(4px);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    color: #4f463f;
+    border-bottom: 1px solid #dbd5cd;
+}
+
+.image-caption i {
+    margin-right: 0.4rem;
+    color: #8b7a6b;
+}
+
+.visual-note {
+    padding: 1.8rem 2rem;
+    background-color: #fefefe;
+    flex: 1;
+}
+
+.visual-note h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #2d2a27;
+}
+
+.visual-note p {
+    color: #3d3833;
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+}
+
+.visual-note blockquote {
+    font-style: italic;
+    border-left: 3px solid #bcab9b;
+    padding-left: 1.2rem;
+    color: #635b53;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+}
+
+.decor-line {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 2rem;
+}
+
+.decor-line span:first-child {
+    width: 40px;
+    height: 2px;
+    background: #c5b9ae;
+}
+
+.decor-line span:last-child {
+    width: 15px;
+    height: 2px;
+    background: #e1d7cf;
+}
+
+/* Правая колонка — контактная информация с пустыми полями */
+.contact-column {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 2.5rem 2.2rem;
+    box-shadow: 0 15px 30px -12px rgba(65, 55, 45, 0.15);
+    border: 1px solid #ece7e1;
+}
+
+.contact-column h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    color: #26221f;
+}
+
+.contact-column .subhead {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #9c8f83;
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed #d2c9c0;
+    padding-bottom: 0.75rem;
+}
+
+/* Стили для полей контактов — пустые, но структурированные */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #f3f0eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #716457;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.contact-content {
+    flex: 1;
+}
+
+.contact-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #ab9f94;
+    margin-bottom: 0.4rem;
+}
+
+.contact-value {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #322e2a;
+    background-color: #f9f7f4;
+    padding: 0.5rem 1rem;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    transition: 0.1s;
+    min-height: 3.5rem;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+}
+
+/* пустые значения — заполнители в виде light текста */
+.contact-value.empty {
+    color: #b9b1a8;
+    font-style: italic;
+    font-weight: 300;
+    background-color: #fcfaf8;
+    border: 1px dashed #dad2c9;
+}
+
+.contact-value.empty i {
+    margin-right: 0.6rem;
+    opacity: 0.5;
+}
+
+.personal-info-header {
+    margin: 2rem 0 0.5rem;
+}
+
+.personal-info-header span {
+    font-weight: 300;
+    color: #a99f95;
+    letter-spacing: 1px;
+}
+
+.personal-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin: 1.2rem 0 1.2rem;
+}
+
+.personal-item {
+    background-color: #f8f6f3;
+    border-radius: 16px;
+    padding: 1.1rem;
+}
+
+.personal-label {
+    font-size: 0.8rem;
+    color: #9f948b;
+    letter-spacing: 0.4px;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+.personal-field {
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 0.7rem 1rem;
+    border: 1px solid #e3dbd3;
+    color: #afa69e;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.personal-field i {
+    color: #c9bcb0;
+    width: 20px;
+}
+
+.personal-field.empty {
+    color: #635b53;
+}
+
+/* Footer — чисто, просто, с копирайтом */
+footer {
+    margin-top: 3.5rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid #ded9d2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #7b7269;
+    font-size: 0.9rem;
+}
+
+.footer-links a {
+    color: #655c54;
+    text-decoration: none;
+    margin-left: 2rem;
+    border-bottom: 1px dotted transparent;
+    transition: border 0.15s;
+}
+
+.footer-links a:hover {
+    border-bottom: 1px dotted #7f6e60;
+}
+
+.copyright i {
+    margin-right: 0.3rem;
+    color: #b7aaa0;
+}
+
+/* Адаптивность (структура не ломается) */
+@media (max-width: 800px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    .site-title {
+        font-size: 2.2rem;
+    }
+    .footer-links a {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .personal-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Для наглядности — легкий плейсхолдер (пустые поля) */
+.note-polite {
+    margin-top: 2rem;
+    background-color: #f1ede8;
+    border-radius: 20px;
+    padding: 1.2rem 1.5rem;
+    font-size: 0.9rem;
+    color: #615a53;
+    border-left: 5px solid #b7aa9d;
+}
+
+.note-polite i {
+    color: #8b7e72;
+    margin-right: 0.3rem;
+}

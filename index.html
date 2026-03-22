@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Связаться | Контактная информация — Гулширин Широва</title>
+    <!-- Подключение шрифтов с качественной типографикой -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Стили для вставки изображений в точности как на скриншоте — с названиями, иконками и разделителями */
+        .visual-note {
+            padding: 1.8rem 2rem;
+            background-color: #fefefe;
+            flex: 1;
+        }
+        
+        .images-section {
+            margin: 2rem 0 1.5rem;
+        }
+        
+        .image-item {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #f0e9e2;
+            padding-bottom: 1.2rem;
+        }
+        
+        .image-item:last-child {
+            border-bottom: none;
+        }
+        
+        .image-custom {
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 0.75rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        
+        .image-custom img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            aspect-ratio: 16 / 10;
+        }
+        
+        .image-title-block {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+        
+        .image-title-block i {
+            color: #b29783;
+            font-size: 1rem;
+            width: 24px;
+        }
+
+        .image-desc {
+            font-size: 0.85rem;
+            color: #8b7b6e;
+            margin-top: 0.4rem;
+            padding-left: 2rem;
+            font-style: italic;
+        }
+        
+        .separator-dash {
+            margin: 1.2rem 0;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        
+        .separator-dash span {
+            height: 1px;
+            background: #e2d9d1;
+            flex: 1;
+        }
+        
+        .separator-dash i {
+            color: #cbbcaE;
+            font-size: 0.7rem;
+        }
+        
+        .craft-list {
+            list-style: none;
+            margin: 1.2rem 0;
+            padding-left: 0;
+        }
+        
+        .craft-list li {
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.7rem;
+            font-size: 0.95rem;
+            color: #5f554c;
+        }
+        
+        .craft-list li i {
+            color: #b99f8b;
+            width: 22px;
+            font-size: 0.9rem;
+        }
+        
+        
+        @media (max-width: 600px) {
+            .visual-note {
+                padding: 1.2rem;
+            }
+            .image-name {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="site-title">
+                <i class="far fa-address-card" aria-hidden="true"></i> 
+                Контакт
+            </div>
+        </header>
+
+        <main class="content-grid">
+            <!-- ЛЕВАЯ колонка: текст + изображения с названиями ровно как на скриншоте -->
+            <div class="visual-column">
+                <div class="visual-note">
+                    <h3>О себе:</h3>
+                    <p>Мои главные увлечения — кулинария и шитье.</p>
+                    <p>Готовка для меня — это способ заботы о близких. Люблю экспериментировать с рецептами, готовить дома то, что обычно заказывают в ресторанах, и радовать семью вкусными ужинами.</p>
+                    <p>Шитье — возможность создавать уникальные вещи, которые идеально сидят и отражают мой вкус. Самостоятельно шью одежду для себя и дома: от платьев до декора.</p>
+                    <p>Оба занятия объединяет внимание к деталям, аккуратность и удовольствие от результата.</p>
+                    
+                    <!-- Разделитель как на скриншоте -->
+                    <div class="separator-dash">
+                        <span></span>
+                        <i class="fas fa-asterisk"></i>
+                        <span></span>
+                    </div>
+                    
+                    <!-- Блок с изображениями в том виде, как просили: с названиями, подписями и эстетикой -->
+                    <div class="images-section">
+                        <!-- Изображение 1: кулинария / эстетика -->
+                        <div class="image-item">
+                            <div class="image-custom">
+                                <img src="./1670486492_9-abrakadabra-fun-p-estetika-shitya-13.jpg" alt="">
+                            </div>
+
+                        </div>
+                        
+                        <!-- Второе изображение: шитье / творчество -->
+                        <div class="image-item">
+                            <div class="image-custom">
+                                <img src="./images (1).jfif" alt="">
+                            </div>
+                            <div class="image-title-block">
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div >
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ПРАВАЯ колонка: контактные данные (полностью в стиле скриншота) -->
+            <div class="contact-column">
+                <h2>Связь:</h2>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="contact-content">
+                        <div class="contact-label">ТЕЛЕФОН</div>
+                        <div class="contact-value empty"><i class="fas fa-pencil-alt"></i> — ожидает обновления —</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-content">
+                        <div class="contact-label">EMAIL</div>
+                        <div class="contact-value empty"><i class="fas fa-pencil-alt"></i> hello@gulshirin.works (тестовый)</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-content">
+                        <div class="contact-label">АДРЕС</div>
+                        <div class="contact-value empty"><i class="fas fa-pencil-alt"></i> Москва / Санкт-Петербург</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <div class="contact-content">
+                        <div class="contact-label">LINKEDIN / СОЦСЕТИ</div>
+                        <div class="contact-value empty"><i class="fas fa-pencil-alt"></i> @gulshirin.sewing</div>
+                    </div>
+                </div>
+
+                <!-- Личная информация (имя исправлено на Гулширин Широва, как на скриншоте) -->
+                <div class="personal-info-header">
+                    <span><i class="far fa-id-card"></i> ЛИЧНАЯ ИНФОРМАЦИЯ</span>
+                </div>
+
+                <div class="personal-info-grid">
+                    <div class="personal-item">
+                        <div class="personal-label"><i class="far fa-user"></i> ИМЯ</div>
+                        <div class="personal-field" style="color:#2f2b27; background:#fff; border-color:#e0d6cf; font-weight: 500;">
+                            <i class="fas fa-user-circle" style="color:#b6a086;"></i> Гулширин Широва
+                        </div>
+                    </div>
+                    <div class="personal-item">
+                        <div class="personal-label"><i class="far fa-building"></i> КОМПАНИЯ</div>
+                        <div class="personal-field empty"><i class="fas fa-asterisk"></i>———</div>
+                    </div>
+                    <div class="personal-item">
+                        <div class="personal-label"><i class="far fa-clock"></i> ВРЕМЯ СВЯЗИ</div>
+                        <div class="personal-field empty"><i class="fas fa-asterisk"></i>———</div>
+                    </div>
+                    <div class="personal-item">
+                        <div class="personal-label"><i class="fas fa-tag"></i> ДОЛЖНОСТЬ</div>
+                        <div class="personal-field empty"><i class="fas fa-asterisk"></i>———</div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
